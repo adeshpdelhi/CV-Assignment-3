@@ -1,2 +1,4 @@
 vehicles/*
 non-vehicles/*
+C*.mat
+vlfeat/*
