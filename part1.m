@@ -1,4 +1,5 @@
 run('vlfeat/toolbox/vl_setup')
+
 names = dir('vehicles/*/*.png');
 % names = names(1:1000);
 vimages = {};
@@ -130,7 +131,7 @@ for i = 1:length(testing_nvimages),
 end
 fprintf('Accuracy for non-vehicle classification : %f\n',correct_nv_classification/(correct_nv_classification+incorrect_nv_classification));
 
-
+fprintf('Total Accuracy: %f\n', (correct_v_classification + correct_nv_classification)/(correct_v_classification + correct_nv_classification + incorrect_v_classification + incorrect_nv_classification));
 
 % i = 2580;
 % I = vimages{i};
